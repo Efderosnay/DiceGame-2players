@@ -1,0 +1,821 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    background: rgb(34, 91, 34);
+    padding-top: 100px;
+}
+.active {
+    background-color:  rgba(253, 252, 252, 0.488);
+} 
+
+.background-0.active{
+    width: 560px;
+    height: 742px;
+    position: absolute;
+    left: 0%;
+    top:-100px;
+    border: 5px solid white;
+    border-radius: 10%; 
+    
+}
+.background-1.active{
+    width: 560px;
+    height: 742px;
+    position: absolute;
+    left:880px;
+    top:-100px;
+    border: 5px solid white;
+    border-radius: 10%; 
+}
+.background-0{
+    width: 560px;
+    height: 742px;
+    position: absolute;
+    left: 0%;
+    top:-100px;
+    border: 5px solid white;
+    border-radius: 10%;    
+}
+.background-1{
+    width: 560px;
+    height: 742px;
+    position: absolute;
+    left:880px;
+    top:-100px;
+    border: 5px solid white;
+    border-radius: 10%; 
+}
+#playerName-0{
+    position: absolute;
+    left:160px;
+    top: 0px;
+    font-family: 'Lato', sans-serif;
+    font-size: 300%;
+    color:black; 
+    text-align: center;
+    text-transform: uppercase;
+}
+#playerName-1{
+    position: absolute;
+    left:1070px;
+    top: 0px;
+    font-family: 'Lato', sans-serif;
+    font-size: 300%;
+    color:black; 
+    text-align: center;
+    text-transform: uppercase;
+}
+#playerScore-0{
+    position: absolute;
+    left:160px;
+    top: 100px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1500%;
+    color:rgba(255, 0, 0, 0.42); 
+    text-align: center;
+}
+#playerScore-1{
+    position: absolute;
+    left:1080px;
+    top: 100px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1500%;
+    color:rgba(255, 0, 0, 0.42); 
+    text-align: center;
+}
+#currentScore-0{
+    width: 200px;
+    height:110px;
+    border: 2px solid white;
+    position: absolute;
+    left:160px;
+    top:450px;
+    font-family: 'Lato', sans-serif;
+    font-size: 100%;
+    background-color:rgba(255, 255, 255, 0.632);
+    border-radius: 20%;
+    color:black; 
+    padding: 14px;
+    text-align: center;
+}
+#currentScore-1{
+    width: 200px;
+    height:110px;
+    border: 2px solid white;
+    position: absolute;
+    left:1060px;
+    top:450px;
+    font-family: 'Lato', sans-serif;
+    font-size: 100%;
+    background-color:rgba(255, 255, 255, 0.632);
+    border-radius: 20%;
+    color:black; 
+    padding: 14px;
+    text-align: center;
+}
+#hidelost-0{
+    font-family: 'Lato', sans-serif;
+    font-size: 200%;
+    position: absolute;
+    left:130px;
+    top: 400px;
+    color: black;
+    width: 300px;
+    height: 80px;
+}
+#hidewinner-0{
+    font-family: 'Lato', sans-serif;
+    font-size: 200%;
+    position: absolute;
+    left:190px;
+    top: 400px;
+    color: black;
+    width: 300px;
+    height: 80px;
+}
+#hidelost-1{
+    font-family: 'Lato', sans-serif;
+    font-size: 200%;
+    position: absolute;
+    left:1040px;
+    top: 400px;
+    color: black;
+    width: 300px;
+    height: 80px;
+}
+#hidewinner-1{
+    font-family: 'Lato', sans-serif;
+    font-size: 200%;
+    position: absolute;
+    left:1090px;
+    top: 400px;
+    color: black;
+    width: 300px;
+    height: 80px;
+}
+#rolldice{
+    position: absolute;
+    left:658px;
+    top: 200px;
+    width: 120px;
+    height: 120px;
+}
+
+.cube_face-front .dot{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    top: 0;
+    right:0;
+    bottom:0;
+    left:0;
+    margin:auto;
+}
+.cube_face-back .dot1{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    top: 15px;
+    left:15px;
+    margin:auto;
+}
+.cube_face-back .dot2{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    top: 15px;
+    right:15px;
+    margin:auto;
+}
+.cube_face-back .dot3{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    margin:auto;
+}
+.cube_face-back .dot4{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    bottom: 15px;
+    left:15px;
+    margin:auto;
+}
+.cube_face-back .dot5{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    bottom: 15px;
+    right:15px;
+    margin:auto;
+}
+
+.cube_face-right .dot6{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    top: 15px;
+    left:15px;
+    margin:auto;
+}
+.cube_face-right .dot7{
+    
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    margin:auto;
+}
+.cube_face-right .dot8{
+    
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    bottom: 15px;
+    right:15px;
+    margin:auto;
+}
+
+.cube_face-left .dot9{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    top: 15px;
+    left:15px;
+    margin:auto;
+}
+.cube_face-left .dot10{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    top: 15px;
+    right:15px;
+    margin:auto;
+}
+.cube_face-left .dot11{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    top:0;
+    bottom:0;
+    left:15px;
+    margin:auto;
+}
+.cube_face-left .dot12{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    top: 0;
+    bottom:0;
+    right:15px;
+    margin:auto;
+}
+.cube_face-left .dot13{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    bottom: 15px;
+    left:15px;
+    margin:auto;
+}
+.cube_face-left .dot14{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    bottom: 15px;
+    right:15px;
+    margin:auto;
+}
+
+.cube_face-top .dot15{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    top: 15px;
+    left:15px;
+    margin:auto; 
+}
+.cube_face-top .dot16{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    bottom: 15px;
+    right:15px;
+    margin:auto; 
+}
+
+.cube_face-bottom .dot17{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    top: 15px;
+    left:15px;
+    margin:auto; 
+}
+.cube_face-bottom .dot18{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    bottom: 15px;
+    left:15px;
+    margin:auto; 
+}
+.cube_face-bottom .dot19{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    top: 15px;
+    right:15px;
+    margin:auto; 
+}
+.cube_face-bottom .dot20{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    bottom: 15px;
+    right:15px;
+    margin:auto; 
+}
+
+.cube div{
+    position: absolute;
+    width: 120px;
+    height:120px;
+    line-height: 120px;
+    background: red;
+    border: 1px solid black;
+    box-shadow: inset 0 0 20px rgba (0,0,0,0.2);
+    text-align: center;
+    font-size: 55px;
+    color: white;
+    font-family: 'Fahkwang', sans-serif;
+
+}
+
+.cube_face-front{
+    transform: translateZ(60px);
+}
+.cube_face-back{
+    transform: rotateY(90deg) translateZ(60px);
+}
+.cube_face-right{
+    transform:  rotateY(90deg) rotateX(90deg) translateZ(60px);
+}
+.cube_face-left{
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(60px) ;
+}
+.cube_face-top{
+    transform:  rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+}
+.cube_face-bottom{
+    transform:  rotateX(-90deg) translateZ(60px);
+}
+
+#dice{
+    position: absolute;
+    width: 120px;
+    height:120px;
+    left:658px;
+    top: 200px;
+    line-height: 120px;
+    background: red;
+    border: 1px solid black;
+}
+.dots{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    top: 0;
+    right:0;
+    bottom:0;
+    left:0;
+    margin:auto;
+}
+.dots1{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    top: 15px;
+    left:15px;
+    margin:auto;
+}
+.dots2{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    top: 15px;
+    right:15px;
+    margin:auto;
+}
+.dots3{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    margin:auto;
+}
+.dots4{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    bottom: 15px;
+    left:15px;
+    margin:auto;
+}
+.dots5{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    bottom: 15px;
+    right:15px;
+    margin:auto;
+}
+
+.dots6{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    top: 15px;
+    left:15px;
+    margin:auto;
+}
+.dots7{  
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    margin:auto;
+}
+.dots8{
+    
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    bottom: 15px;
+    right:15px;
+    margin:auto;
+}
+.dots9{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    top: 15px;
+    left:15px;
+    margin:auto;
+}
+.dots10{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    top: 15px;
+    right:15px;
+    margin:auto;
+}
+.dots11{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    top:0;
+    bottom:0;
+    left:15px;
+    margin:auto;
+}
+.dots12{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    top: 0;
+    bottom:0;
+    right:15px;
+    margin:auto;
+}
+.dots13{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    bottom: 15px;
+    left:15px;
+    margin:auto;
+}
+.dots14{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    bottom: 15px;
+    right:15px;
+    margin:auto;
+}
+.dots15{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    top: 15px;
+    left:15px;
+    margin:auto; 
+}
+.dots16{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    bottom: 15px;
+    right:15px;
+    margin:auto; 
+}
+
+.dots17{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    top: 15px;
+    left:15px;
+    margin:auto; 
+}
+.dots18{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    bottom: 15px;
+    left:15px;
+    margin:auto; 
+}
+.dots19{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    top: 15px;
+    right:15px;
+    margin:auto; 
+}
+.dots20{
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background:black;
+    bottom: 15px;
+    right:15px;
+    margin:auto; 
+}
+/* #faceD1{
+    position: absolute;
+}
+#faceD2{
+    position: absolute;
+}
+#faceD3{
+    position: absolute;
+}
+#faceD4{
+    position: absolute;
+}
+#faceD5{
+    position: absolute;
+}
+#faceD6{
+    position: absolute;
+} */
+#diceGame{
+    position: absolute;
+}
+#letsPlay{
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    top: 450px;
+    left: 590px;
+    border-radius: 20%;
+    background-color: rgba(255, 0, 0, 0.55);
+    font-family: 'Indie Flower', cursive;
+    font-size: 200%;
+    text-align: center;
+    color: black;
+}
+#keepScore{
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    top: 450px;
+    left: 740px;
+    border-radius: 20%;
+    background-color: rgba(255, 0, 0, 0.55);
+    font-family: 'Indie Flower', cursive;
+    font-size: 200%;
+    text-align: center;
+    color: black;
+}
+
+#letsPlayAgain{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 15%;
+    left: 625px;
+    border-radius: 20%;
+    background-color:rgba(255, 0, 0, 0.55);
+    font-family: 'Indie Flower', cursive;
+    font-size: 200%;
+    text-align: center;
+    color: black;
+}
+#score-0{
+    font-family: 'Lato', sans-serif;
+    font-size: 250%;
+    color:black;  
+    position: absolute;
+    top:500px;
+    left:235px;
+    text-align: center;
+    margin-left: 10px;
+}
+#score-1{
+    font-family: 'Lato', sans-serif;
+    font-size: 250%;
+    color:black;  
+    position: absolute;
+    top:500px;
+    left:1135px;
+    margin-left: 10px;
+}
+
+.cube{
+    animation: spin 1.5s ease-in-out 2;
+    transform-origin:60px 60px 0; 
+    transform-style: preserve-3d;
+}
+@keyframes spin{
+    16% { transform: rotateY(-90deg);}
+    33% { transform: rotateY(-90deg) rotateZ(90deg);}
+    50% { transform: rotateY(180deg) rotateZ(90deg);}
+    66% { transform: rotateX(180deg) rotateY(-90deg);}
+    100% { transform: rotateX(90deg);}
+}
+/* @media only screen and (max-width:1925px) {
+    #letsPlayAgain {
+        top: 10%;
+        left: 45%;
+    }
+    #letsPlay{
+        top: 60%;
+        left: 35%;
+    }
+    
+   #keepScore{
+        top: 60%;
+        left: 55%;
+    }
+    #rolldice{   
+        position:absolute;
+        top: 200px;
+        left:900px;
+    }
+   #playerScore-0{
+        left:160px;
+        top: 100px;
+    }
+   #playerScore-1{
+        left:1060px;
+        top: 100px;
+    }
+} */
+/* @media  (max-width:1025px) {
+    #letsPlayAgain {
+        top: 10%;
+        left: 60%;
+    }
+    #letsPlay{
+        top: 40%;
+        left: 56%;
+    }
+    
+   #keepScore{
+        top: 40%;
+        left: 74%;
+    }
+   #playerScore-0{
+        left:160px;
+        top: 100px;
+    }
+   #playerScore-1{
+        left:1060px;
+        top: 100px;
+    }
+} */
+/* Tablet Landscape */
+@media screen and (max-width: 1800px) {
+    #diceGame { width:100%; }     
+}
+@media screen and (max-width: 1366px) {
+    #diceGame { width:72%; }     
+}
+@media screen and (max-width: 568px) {
+    #diceGame { width:57%; }     
+}
+@media screen and (max-width: 1366px) {
+    #diceGame { width:54%; }     
+}
+@media screen and (max-width: 1112px) {
+    #diceGame { width:66%; }     
+}
+@media screen and (max-width: 1024px) {
+    #diceGame { width:72%; }     
+}
