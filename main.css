@@ -9,6 +9,20 @@ body{
     background: rgb(34, 91, 34);
     padding-top: 100px;
 }
+#gameRule{
+    width: 800px;
+    height: 200px;
+    background-color: black;
+    color: white;
+    font-family: 'Lato', sans-serif; 
+    position:absolute;
+    top:200px;
+    left:23%;
+    list-style-type: circle;
+}
+#gameRule p{
+    text-align: center
+}
 .active {
     background-color:  rgba(253, 252, 252, 0.488);
 } 

@@ -6,8 +6,6 @@ let activePlayer;
 let score;
 let button2 = document.getElementById("letsPlayAgain");
 let button3 = document.getElementById("keepScore");
-//let panel0= document.getElementsByClassName("background-0");
-//let panel1 = document.getElementsByClassName("background-1");
 
 function init() {
   score = [0,0];
@@ -43,6 +41,7 @@ function nextPlayer(){
  
 button2.addEventListener('click', function () {
   init();
+  document.getElementById("gameRule").style.display ="none";
   document.getElementById("letsPlay").style.display =""; 
   document.getElementById("keepScore").style.display ="none";
   document.getElementById("letsPlayAgain").style.display ="none"; 

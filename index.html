@@ -10,6 +10,7 @@
 </head>
 <body>   
 <div id="diceGame">  
+    
     <div class= "player0">
         <div id="background-0" class="background-0 active"></div>
         <div id="playerName-0" class="player-name">Player 1</div>
@@ -109,6 +110,16 @@
      <button id="letsPlay" style="display: none">Roll</button>
      <button id="keepScore" style="display: none">Hold</button>
      
+    </div>
+    <div id="gameRule" style="display: block;">
+            <p>GAME RULES:</p>
+            <ul>         
+                <li>The game has 2 players, playing in rounds</li>
+                <li>In each turn, a player rolls a dice as many times as he whishes. Each result get added to his current score</li>
+                <li>BUT, if the player rolls a 1, all his current score gets lost. After that, it's the next player's turn</li>
+                <li>The player can choose to 'Hold', which means that his current score gets added to his total score. After that, it's the next player's turn</li>
+                <li>The first player to reach 20 points on total score wins the game</li>
+            </ul> 
     </div>
 </div>    
     <script src="script.js"></script>
