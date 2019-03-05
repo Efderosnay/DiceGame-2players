@@ -127,7 +127,7 @@ button3.addEventListener('click', function () {
     document.getElementById('playerScore-'+ activePlayer).textContent = score[activePlayer];
     document.getElementById('score-'+ activePlayer).textContent = 0; 
     
-  if (score[activePlayer] >= 20){
+  if (score[activePlayer] >= 50){
 
   document.getElementById("letsPlay").style.display ="none";
   document.getElementById("hidewinner-"+ activePlayer).style.display ="";
