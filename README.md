@@ -1,5 +1,6 @@
 # diceGame2players
 
+Demo: https://efderosnay.github.io/diceGame2players/
 GAME RULES:
 
 - The game has 2 players, playing in rounds
